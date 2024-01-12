@@ -1,13 +1,5 @@
 import pandas
 
-
-data = {
-    'date': ['07.05.2022', '07.05.2022', '08.05.2022', '08.05.2022'],
-    'product_name': ['Банан', 'Хлеб', 'Банан', 'Хлеб'],
-    'quantity': [30, 10, 40, 8]
-       }
-
-
 def count_sum(parameters):
     df = pandas.DataFrame(data=parameters)
     product = df.set_index('product_name')
